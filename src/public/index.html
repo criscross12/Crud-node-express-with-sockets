@@ -8,10 +8,16 @@
 </head>
 <body>
 
-    <h1>Hola mundo HTML</h1>
+    <form id="noteform">
+        <input id="title" type="text">
+        <textarea id="description" rows="3"></textarea>
+        <button>Save</button>
+    </form>
+
+    <div class="col-md-8 py-3" id="notes"></div>
 
     <script src="/socket.io/socket.io.js"></script>
-    <script src="./main.js"></script>
+    <script src="./main.js" type="module"></script>
     
 </body>
 </html>
